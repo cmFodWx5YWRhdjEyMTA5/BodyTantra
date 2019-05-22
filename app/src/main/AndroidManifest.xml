@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.getubusiness">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".bodytantra.Packages"></activity>
+        <activity
+            android:name=".bodytantra.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".bodytantra.Offers" />
+        <activity android:name=".bodytantra.Services" />
+        <activity android:name=".bodytantra.Pricing" />
+        <activity
+            android:name=".bodytantra.Booking"
+            android:label="@string/title_activity_booking"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bodytantra.loginregister.activities.ForgotPassword2" />
+        <activity android:name=".bodytantra.loginregister.activities.ForgotPasswordActivity" />
+        <activity android:name=".bodytantra.loginregister.OTPActivity" />
+        <activity android:name=".bodytantra.loginregister.activities.UsersListActivity" />
+        <activity android:name=".bodytantra.loginregister.activities.LoginActivity" />
+        <activity android:name=".bodytantra.loginregister.activities.RegisterActivity" />
+    </application>
+
+</manifest>
